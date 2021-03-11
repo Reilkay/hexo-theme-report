@@ -5,7 +5,7 @@ meta(name="robots", content="index, follow")
 
 title
     block site_title
-        = config.title
+        = config.title + ' • ' + config.subtitle
 
 block description
     meta(name='description', content=config.description ? config.description : __('meta_description'))
