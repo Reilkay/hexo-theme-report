@@ -665,3 +665,33 @@ pre .emphasis {
 pre .strong {
   font-weight: 600;
 }
+
+/* loading bar */
+
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 0.4s linear;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--maincolor);
+  box-shadow: 0 0 10px var(--shadowcolor);
+}
+
+.loading {
+  opacity: 1;
+  transition: none;
+}
+
+.progress {
+  transition: width 0.4s ease;
+}

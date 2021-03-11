@@ -3,13 +3,15 @@ html(lang=config.language)
     head
         include head.pug
     body
+        div.loading-bar
+            div.progress
         .wrap#barba-wrapper
             header
                 h1.branding
                     a(href=url_for(), title=config.title)
                         if theme.logo
                             img.logo-image(src=url_for(theme.logo), alt='logo', style="vertical-align:middle")
-                    a #{config.title + ' • ' + config.subtitle}
+                    a(href=url_for(), title=config.title) #{config.title + ' • ' + config.subtitle}
                 include nav.pug
             .barba-container
                 main.container
