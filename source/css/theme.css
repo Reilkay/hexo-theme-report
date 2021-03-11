@@ -1,3 +1,10 @@
+:root{
+  --maincolor: #4f81bd;
+  --shadowcolor: #365b87;
+  --tagcolor: #0177a5;
+  --selectoridcolor: #0059ff;
+}
+
 body {
   color: #222831;
   font-size: calc(110% + 0.1vw);
@@ -42,7 +49,7 @@ h6 {
 
 ::selection {
   color: #fff;
-  background-color: #9e1900;
+  background-color: var(--maincolor);
 }
 
 .nav-list {
@@ -57,7 +64,7 @@ h6 {
 }
 
 .nav-list-link:hover {
-  border-bottom: 0.2em solid #9e1900;
+  border-bottom: 0.2em solid var(--maincolor);
   padding-bottom: 0.15em;
   transition: 150ms ease-in-out;
 }
@@ -185,7 +192,7 @@ header .nav-list-item a {
 }
 
 .home.post-list .read-more {
-  color: #9e1900;
+  color: var(--maincolor);
 }
 
 .archive .post-item {
@@ -198,12 +205,12 @@ header .nav-list-item a {
   font-size: 1rem;
 }
 .archive .post-title-link {
-  color: #9e1900;
+  color: var(--maincolor);
   padding-left: 1em;
 }
 .archive .post-title-link:hover {
   border-bottom: 0;
-  color: #801501;
+  color: var(--shadowcolor);
 }
 .archive .post-info {
   width: 6em;
@@ -249,7 +256,7 @@ header .nav-list-item a {
 .post-content h5 a:before,
 .post-content h6 a:before {
   content: "#";
-  color: #9e1900;
+  color: var(--maincolor);
   position: absolute;
   left: -0.8em;
   top: -0.1em;
@@ -294,7 +301,7 @@ header .nav-list-item a {
 }
 
 .post-content a {
-  color: #9e1900;
+  color: var(--maincolor);
   word-break: break-all;
 }
 .post-content blockquote {
@@ -302,7 +309,7 @@ header .nav-list-item a {
   padding: 0.5em 1.3em;
   border: 0.05em solid #eee;
   border-radius: 0.1em;
-  border-left-color: #9e1900;
+  border-left-color: var(--maincolor);
   border-left-width: 0.1em;
 }
 
@@ -371,18 +378,18 @@ header .nav-list-item a {
 .paginator .prev,
 .paginator .next {
   position: relative;
-  box-shadow: 0 0.3em #801501;
+  box-shadow: 0 0.3em var(--shadowcolor);
   display: inline-block;
   margin: 0 0.2em;
   padding: 0.3em 1.5em;
   border-radius: 5px;
   color: #fff;
-  background-color: #9e1900;
+  background-color: var(--maincolor);
   font-weight: 600;
 }
 .paginator .prev:hover,
 .paginator .next:hover {
-  box-shadow: 0 0.2em #801501;
+  box-shadow: 0 0.2em var(--shadowcolor);
   top: 0.1em;
 }
 
@@ -608,12 +615,12 @@ pre .tag .attr {
 }
 pre .string,
 pre .doctag {
-  color: #d14;
+  color: var(--tagcolor);
 }
 pre .title,
 pre .section,
 pre .selector-id {
-  color: #900;
+  color: var(--selectoridcolor);
   font-weight: 600;
 }
 pre .subst {
