@@ -1,13 +1,12 @@
-name: Brewski
+name: report
 url: https://github.com/tiaanduplessis/hexo-theme-brewski
 
 menu:
-  Home: /
-  About: /about
-  Archives: /archives
-  Impressum:
-  GitHub:
-  RSS: /atom.xml
+  主页: /
+  关于: /about
+  归档: /archives
+  留言: /comment
+  订阅: /atom.xml
 
 favicon: /favicon.svg
 logo: /logo.svg
