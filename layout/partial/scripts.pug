@@ -1,4 +1,3 @@
-// script(src='https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js')
 script(src='https://unpkg.com/@barba/core')
 script.
     var scrollTimer = null;
@@ -7,23 +6,19 @@ script.
     var progress = document.querySelector(".loading-bar .progress");
 
     var linkClicked = ()=>{
-        console.log(1237774);
         var loadingBarWidth = 20;
         var MAX_LOADING_WIDTH = 95;
 
         loadingBar.classList.add("loading");
         progress.style.width = loadingBarWidth + "%";
 
-        console.log(123784);
         clearInterval(progressTimer);
-        console.log(123794);
+
         progressTimer = setInterval(()=> {
-            console.log(1238999884);
             loadingBarWidth += 5;
             if (loadingBarWidth > MAX_LOADING_WIDTH) {
             loadingBarWidth = MAX_LOADING_WIDTH;
             }
-            console.log(1238884);
             progress.style.width = loadingBarWidth + "%";
         }, 500);
     }
@@ -57,15 +52,13 @@ script.
     document.addEventListener('DOMContentLoaded', function() {
         barba.init({
             transitions: [{
-                name: 'default-transition',
+                name: 'page',
                 leave() {
                     linkClicked();
-                    console.log(1234);
                 // create your stunning leave animation here
                 },
                 enter() {
-                    transitionCompleted();
-                    console.log(4321);
+                    setTimeout(()=>transitionCompleted(),100);
                 // create your amazing enter animation here
                 }
             }]
