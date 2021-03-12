@@ -14,7 +14,8 @@ block container
 block pagination
     include mixins/paginator.pug
     +post()
-    include partial/comment.pug
+    if page.comments
+        include partial/comment.pug
 
 block copyright
     include partial/copyright.pug

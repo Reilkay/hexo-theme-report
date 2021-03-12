@@ -16,5 +16,9 @@ block container
             .post-content
                 != page.content
 
+block pagination
+    if page.comments
+        include partial/comment.pug
+
 block copyright
     include partial/copyright.pug

@@ -5,7 +5,8 @@ html(lang=config.language)
     body
         div.loading-bar
             div.progress
-        .wrap#barba-wrapper
+        //.wrap#barba-wrapper
+        div(data-barba="wrapper")
             header
                 h1.branding
                     a(href=url_for(), title=config.title)
@@ -13,7 +14,8 @@ html(lang=config.language)
                             img.logo-image(src=url_for(theme.logo), alt='logo', style="vertical-align:middle")
                     a(href=url_for(), title=config.title) #{config.title + ' • ' + config.subtitle}
                 include nav.pug
-            .barba-container
+            //.barba-container
+            main-barba(data-barba="container" data-barba-namespace="page")
                 main.container
                     block container
                 footer
