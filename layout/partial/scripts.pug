@@ -52,3 +52,37 @@ script.
         }, 30); 
     });
     
+script.
+    document.addEventListener('pjax:complete', function () {
+        pjax_minivaline();
+    });
+    function pjax_minivaline() {
+        if(!document.querySelectorAll(".mvcomment")[0])return;
+        new MiniValine({
+            el: '#vcomment',
+            backend: 'waline',
+            serverURLs: #{config.valine.serverURLs},
+            placeholder: #{config.valine.placeHolder},
+            visitor: #{config.valine.visitor},
+            pathname: location.pathname,
+            enableFlag: true,
+            enableUA: true,
+            master: [],
+            friends: [],
+            tagMeta: ["博主", "朋友", "访客"],
+        });
+    }
+    (function () {
+        setTimeout(function() {
+            var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+            var src = 'https://cdn.jsdelivr.net/npm/minivaline@latest/dist/MiniValine.min.js'
+            var script = document.createElement('script')
+            script.setAttribute('type','text/javascript')
+            script.onload = function() {
+               pjax_minivaline()
+            }
+            script.setAttribute('src', src)
+            HEAD.appendChild(script)
+        }, 1);
+    })();
+    

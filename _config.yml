@@ -11,14 +11,8 @@ menu:
 favicon: /favicon.svg
 logo: /logo.svg
 
-# Disqus shortname
-disqus:
-
-# Analytics
-google_analytics:
-
 # Copyright Infomation
 copyright:
   since: 2021
   name: Ray
-  url: 
+  url: https://blog.reilkay.com
