@@ -73,6 +73,8 @@ script.
 
     function pjax_minivaline() {
         if(!document.querySelectorAll("#vcomment")[0])return;
+        var master = "#{config.valine.master}".split(",");
+        var friends = "#{config.valine.friends}".split(",");
         new MiniValine({
             el: '#vcomment',
             backend: 'waline',
@@ -82,8 +84,8 @@ script.
             pathname: location.pathname,
             enableFlag: true,
             enableUA: true,
-            master: [],
-            friends: [],
+            master: master,
+            friends: friends,
             tagMeta: ["博主", "朋友", "访客"],
         });
     };
