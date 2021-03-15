@@ -1,19 +1,19 @@
 {
-  "name": "hexo-theme-brewski",
+  "name": "hexo-theme-report",
   "version": "1.0.0",
   "description": "A minimal Hexo theme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiaanduplessis/hexo-theme-brewski"
+    "url": "https://github.com/Reilkay/hexo-theme-report"
   },
   "keywords": [
     "hexo",
     "theme"
   ],
-  "author": "Tiaan du Plessis",
+  "author": "Reilkay",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tiaanduplessis/hexo-theme-brewski/issues"
+    "url": "https://github.com/Reilkay/hexo-theme-report/issues"
   },
-  "homepage": "https://github.com/tiaanduplessis/hexo-theme-brewski#readme"
+  "homepage": "https://github.com/Reilkay/hexo-theme-report#readme"
 }

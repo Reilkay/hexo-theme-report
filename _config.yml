@@ -3,9 +3,9 @@ url: https://github.com/Reilkay/hexo-theme-report
 
 menu:
   主页: /
-  归档: /archives
-  留言: /comment
-  关于: /about
+  归档: /archives/
+  留言: /comment/
+  关于: /about/
   订阅: /atom.xml
 
 favicon: /favicon.svg
