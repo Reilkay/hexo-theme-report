@@ -11,6 +11,11 @@ menu:
 favicon: /favicon.svg
 logo: /logo.svg
 
+# Google Analytics
+google_analytics:
+  enable: true
+  code: G-BLKG2GLF9E
+
 # Copyright Infomation
 copyright:
   since: 2021
